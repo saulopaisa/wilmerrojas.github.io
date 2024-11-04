@@ -1,0 +1,34 @@
+/* montserrat */
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+/* DharmaGothic */
+
+@font-face {
+    font-family: DharmaGothic;
+    font-weight: 400;
+    src: url("../fonts/DharmaGothicE_Regular_R.otf") format("truetype");
+}
+
+/* FFMetaProCond */
+
+@font-face {
+    font-family: FFMetaProCond;
+    font-weight: 700;
+    src: url("../fonts/FFMetaProCondXBold.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: FFMetaProCond;
+    font-weight: 500;
+    src: url("../fonts/FFMetaProRegular.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: FFMetaProCond;
+    font-weight: 200;
+    src: url("../fonts/FFMetaProThin.TTF") format("truetype");
+}

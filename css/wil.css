@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #000;
+    padding: 20px 0;
+    z-index: 1000;
+    font-family: DharmaGothic;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #f89e0e;
+}
+
+/* Colored text in menu */
+.white {
+    color: white;
+}
+
+.yellow {
+    color: #f89e0e
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('../img/png/fondo-top.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.transparent-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.hero h1 .white {
+    color: white;
+}
+
+/* Sticky Header */
+header {
+    transition: background-color 0.3s ease;
+}
+
+body {
+    padding-top: 0px; /* Evitar que el contenido se oculte detrás del header */
+}
+
+/* General styles */
+.info-section, .experience-section {
+    background-image: url('../img/png/fondo-mid.png');
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.name {
+font-weight: 700;
+}
+
+.left-section, .right-section {
+    width: 48%;
+}
+
+/* Sobre mí */
+.info-section img {
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.experience-section img {
+    width: 900px;
+
+}
+
+.intro {
+    font-family: FFMetaProCond;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.info-section p, .right-section p {
+    margin-bottom: 0px;
+    margin-right: 130px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    margin-top: 80px;
+    font-family: Montserrat;
+}
+
+.contact {
+    margin-top: 250px;
+}
+
+/* Educación */
+.education-entry {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.year {
+    color: #f89e0e;
+    font-weight: 900;
+}
+
+.institution {
+    color: #242424;
+    font-family: FFMetaProCond;
+    font-weight: 500;
+}
+
+.course-title {
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+/* Software */
+.software-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.software-entry img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.software-title {
+    font-weight: bold;
+    font-family: Montserrat;
+    color: black;
+    font-size: 20px;
+}
+
+.software-description {
+    color: #303030;
+}
+
+/* Cursos */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Experiencia laboral */
+.experience-entry {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.role {
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+/* Contacto */
+.contact-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact-entry img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.contact-entry p {
+    color: black;
+    font-size: 20px;
+}
+
+/* Proyectos Section */
+.projects-section {
+    text-align: center;
+    padding: 50px 60px;
+    position: relative;
+    background: url('../img/jpg/fondo-bot.jpg') ;
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+.projects-section h2 {
+    font-size: 180px;
+    margin-bottom: 40px;
+    margin-top: 150px;
+    color: white;
+    font-family: DharmaGothic;
+    letter-spacing: px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    position: relative;
+    width: 30%;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    font-size: 70px;
+    font-family: DharmaGothic;
+}
+
+.project-info .white {
+    color: white;
+}
+
+.project-info .yellow {
+    color: #f89e0e;
+}
+
+/* Ver más button */
+.view-more {
+    position: absolute; /* Posicionar el botón sobre la imagen */
+    bottom: -30px; /* Ajusta este valor para moverlo hacia arriba o hacia abajo */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar la posición al centro */
+    padding: 10px 20px;
+    background-color: white;
+    color: #f89e0e;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1; /* Asegúrate de que esté sobre la imagen */
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+.view-more:hover {
+    background-color: #f89e0e;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-link {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: DharmaGothic;
+}
+
+.left-link:hover {
+    color: #f89e0e;
+}
+
+.right-icons a {
+    margin-left: 20px;
+}
+
+.right-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7486%) hue-rotate(183deg) brightness(122%) contrast(96%);
+}
+
+@media (width <= 750px) {
+
+}
